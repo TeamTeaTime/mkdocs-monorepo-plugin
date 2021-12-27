@@ -2,7 +2,7 @@ import setuptools
 
 
 setuptools.setup(
-    name='mkdocs-monorepo-plugin',
+    name='mkdocs-monorepo-wildcard-plugin',
     version='0.5.1',
     description='Plugin for adding monorepository support in Mkdocs.',
     long_description="""
@@ -32,7 +32,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     entry_points={
         'mkdocs.plugins': [
-            "monorepo = mkdocs_monorepo_plugin.plugin:MonorepoPlugin"
+            "monorepo-wildcard = mkdocs_monorepo_wildcard_plugin.plugin:MonorepoWildcardPlugin"
         ]
     }
 )
