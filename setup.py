@@ -3,17 +3,17 @@ import setuptools
 
 setuptools.setup(
     name='mkdocs-monorepo-wildcard-plugin',
-    version='0.5.1',
-    description='Plugin for adding monorepository support in Mkdocs.',
+    version='0.1.0',
+    description='Plugin for adding monorepository support with additional support for wildcard includes in Mkdocs.',
     long_description="""
         This introduces support for the !include syntax in mkdocs.yml, allowing you to import additional Mkdocs navigation.
         It enables large or complex repositories to have their own sets of docs/ folders, whilst generating only a single Mkdocs site.
-        This is built and maintained by the engineering community at Spotify.
+        This is a fork adding support for wildcard includes.
     """,  # noqa: E501
-    keywords='mkdocs monorepo',
-    url='https://github.com/backstage/mkdocs-monorepo-plugin',
-    author='Bilawal Hameed',
-    author_email='bil@spotify.com',
+    keywords='mkdocs monorepo wildcard',
+    url='https://github.com/TeamTeaTime/mkdocs-monorepo-plugin',
+    author='Thomas Jung',
+    author_email='thomas@jung.town',
     license='Apache-2.0',
     python_requires='>=3',
     install_requires=[
