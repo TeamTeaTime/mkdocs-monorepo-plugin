@@ -1,4 +1,6 @@
-# backstage/mkdocs-monorepo-plugin
+# backstage/mkdocs-monorepo-wildcard-plugin
+
+> **Note: This is a modified version of [backstage/mkdocs-monorepo-plugin](https://github.com/backstage/mkdocs-monorepo-plugin) with support for wildcard includes.
 
 [![](https://github.com/backstage/mkdocs-monorepo-plugin/workflows/Build%2C%20Test%20%26%20Deploy/badge.svg)](https://github.com/backstage/mkdocs-monorepo-plugin/actions)
 [![PyPI](https://img.shields.io/pypi/v/mkdocs-monorepo-plugin)](https://pypi.org/project/mkdocs-monorepo-plugin/)

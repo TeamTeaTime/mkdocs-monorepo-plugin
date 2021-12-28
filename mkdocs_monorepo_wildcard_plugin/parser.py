@@ -47,8 +47,8 @@ class Parser:
                 key = list(item.keys())[0]
                 value = list(item.values())[0]
                 if key.startswith(WILDCARD_INCLUDE_STATEMENT):
-                    base_path, name = key[len(WILDCARD_INCLUDE_STATEMENT):].split()
-                    key = name
+                    base_path, *name = key[len(WILDCARD_INCLUDE_STATEMENT):].split()
+                    key = " ".join(name)
                     dirs = sorted(glob.glob(base_path))
                     if dirs:
                         value = []
@@ -96,8 +96,9 @@ class Parser:
                 key = list(item.keys())[0]
                 value = list(item.values())[0]
                 if key.startswith(WILDCARD_INCLUDE_STATEMENT):
-                    base_path, name = key[len(WILDCARD_INCLUDE_STATEMENT):].split()
-                    key = name
+                    base_path, *name = key[len(WILDCARD_INCLUDE_STATEMENT):].split()
+                    key = " ".join(name)
+
                     dirs = sorted(glob.glob(base_path))
 
                     if dirs:
