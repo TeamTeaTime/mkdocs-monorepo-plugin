@@ -16,7 +16,6 @@ import logging
 import os
 import copy
 import re
-from pathlib import Path
 import glob
 
 from slugify import slugify
