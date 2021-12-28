@@ -17,7 +17,7 @@ from .parser import Parser
 from .merger import Merger
 
 
-class MonorepoPlugin(BasePlugin):
+class MonorepoWildcardPlugin(BasePlugin):
     def __init__(self):
         self.parser = None
         self.merger = None
